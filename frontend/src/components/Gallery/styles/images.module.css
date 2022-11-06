@@ -1,0 +1,127 @@
+:root {
+	--placeholder-background: hsl(0, 0%, 85%);
+	--hover-background:hsl(0, 0%, 80%); 
+}
+
+.image-placeholder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	border-width: 1px;
+	border-color: hsl(0, 0%, 78%);
+	border-style: solid;
+	padding: 2px;
+	background-color: var(--placeholder-background);
+	transition: background-color 300ms;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.placeholder {
+	width: 5rem;
+	height: 5rem;
+}
+
+.image-placeholder-outline svg {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+    border-radius: 3px;
+	border: 2px dashed var(--gray-300);
+	color: var(--slate-300);
+	outline: 0;
+	padding: 50px;
+	background-color: transparent;
+	transition: background-color 200ms ease-in-out;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.image-placeholder-outline svg:hover,
+.image-placeholder-outline:active,
+.image-placeholder-outline:focus {
+    border-color: var(--dropzone-border-hover);
+    background-color: var(--dropzone-background-hover);
+}
+
+.transparent-placeholder {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	border-style: none;
+	background-color: transparent;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+.image-placeholder:hover {
+	background-color: var(--hover-background);
+}
+
+.image-placeholder--text {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.image-placeholder--img {
+	border-radius: .275rem;
+	border-width: .5px;
+	border-color: var(--gray-100);
+	border-style: solid;
+	padding: 2% 6%;
+}
+
+.image-overlay img {
+	border-radius: .0875rem;
+	border-width: 2px;
+	border-color: var(--gray-200);
+	border-style: solid;
+	padding: 2px;
+	background-color: var(--gray-50);
+}
+
+.image-thumbnail img {
+	width: 5.46rem;
+	height: auto;
+	border-radius: .0875rem;
+	border-width: 2px;
+	border-color: var(--gray-200);
+	border-style: solid;
+	padding: 2px;
+	background-color: var(--gray-50);
+}
+
+.image-avatar-sm img {
+	border-radius: 50%;
+	margin: -8px 0;
+	float: left;
+	margin-right: 10px;
+}
+
+.image-avatar-md img {
+	border-radius: 50%;
+	margin: -8px 0;
+	border-width: 2px;
+	border-color: var(--gray-200);
+	border-style: solid;
+	padding: 2px;
+	background-color: var(--gray-50);
+}
+
+.image-avatar-lg img {
+	border-radius: 50%;
+	margin: -8px 0;
+	border-width: 2px;
+	border-color: var(--gray-200);
+	border-style: solid;
+	padding: 2px;
+	background-color: var(--gray-50);
+}
