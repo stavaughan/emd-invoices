@@ -1,0 +1,24 @@
+.notfound--bg-image svg {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+	width: 40.9rem;
+	height: 24.8rem
+}
+
+@media (max-width: 767.98px) {
+    .notfound--bg-image svg {
+        margin-top: 1.5rem;
+        margin-bottom: 2.4rem;
+		width: 30.6rem;
+		height: 18.6rem
+    }
+}
+
+@media (max-width: 575.98px) {
+    .notfound--bg-image svg {
+        margin-top: 0rem;
+        margin-bottom: .7rem;
+		width: 23.5rem;
+		height: 15.5rem
+    }
+}
