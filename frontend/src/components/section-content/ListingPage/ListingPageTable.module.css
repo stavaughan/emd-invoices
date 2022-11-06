@@ -1,0 +1,68 @@
+.table-head-col_listing__id {
+    width: 21px;
+}
+.table-head-col_listing__action {
+    min-width: 55px;
+}
+
+.table-head-col_accounts__name {
+    width: auto;
+}
+.table-head-col_accounts__owner {
+    width: auto;
+}
+.table-head-col_accounts__category {
+    width: auto;
+}
+
+.table-head-col_contacts__name {
+    min-width: 220px;
+}
+.table-head-col_contacts__company {
+    min-width: 240px;
+}
+.table-head-col_contacts__phone {
+    min-width: 120px;
+}
+.table-head-col_contacts__email {
+    width: auto;
+}
+
+.table-head-col_vendors__itemid {
+    width: 50px;
+}
+.table-head-col_vendors__vendor {
+	min-width: 320px;
+}
+
+.table-head-col_bankAccounts__name {
+    min-width: 260px;
+}
+.table-head-col_bankAccounts__number {
+    min-width: 100px;
+}
+.table-head-col_bankAccounts__owner {
+    min-width: 200px;
+}
+.table-head-col_bankAccounts__balance {
+    min-width: 90px;
+}
+.table-head-col_bankAccounts__date {
+    width: auto;
+}
+.table-head-col_bankAccounts__notes {
+    width: auto;
+}
+
+@media (max-width:575.98px) {
+	.table-head-col_accounts__name,
+	.table-head-col_contacts__name {
+		min-width: 180px;
+	}
+	.table-head-col_vendors__vendor {
+		min-width: 220px;
+	}
+	.table-head-col_bankAccounts__notes {
+		display: none;
+	}
+}
