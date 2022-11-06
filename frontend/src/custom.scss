@@ -1,0 +1,382 @@
+/*********************************************/
+/*          CUSTOMIZED DEFAULTS         	*/
+/********************************************/
+@use "sass:meta";
+
+$white: #ffffff;
+
+$indigo-900: #312e81;
+$indigo-800: #3730a3;
+$indigo-700: #4338ca;
+$indigo-600: #4f46e5;
+$indigo-500: #6366f1;
+$indigo-400: #818cf8;
+$indigo-300: #a5b4fc;
+$indigo-200: #c7d2fe;
+$indigo-100: #e0e7ff;
+$indigo-50: #eef2ff;
+
+$blue-900: #1e3a8a;
+$blue-800: #1e40af;
+$blue-700: #1d4ed8;
+$blue-600: #2563eb;
+$blue-500: #3b82f6;
+$blue-400: #60a5fa;
+$blue-300: #93c5fd;
+$blue-200: #bfdbfe;
+$blue-100: #dbeafe;
+$blue-50: #eff6ff;
+
+$slate-900: #0f172a;
+$slate-800: #1e293b;
+$slate-700: #334155;
+$slate-600: #475569;
+$slate-500: #64748b;
+$slate-400: #94a3b8;
+$slate-300: #cbd5e1;
+$slate-200: #e2e8f0;
+$slate-100: #f1f5f9;
+$slate-50: #f8fafc;
+
+$gray-900: #111827;
+$gray-800: #1f2937;
+$gray-700: #374151;
+$gray-600: #4b5563;
+$gray-500: #6b7280;
+$gray-400: #9ca3af;
+$gray-300: #d1d5db;
+$gray-200: #e5e7eb;
+$gray-100: #f3f4f6;
+$gray-50: #f9fafb;
+
+$sky-900: #0c4a6e;
+$sky-800: #075985;
+$sky-700: #0369a1;
+$sky-600: #0284c7;
+$sky-500: #0ea5e9;
+$sky-400: #38bdf8;
+$sky-300: #7dd3fc;
+$sky-200: #bae6fd;
+$sky-100: #e0f2fe;
+$sky-50: #f0f9ff;
+
+$cyan-900: #164e63;
+$cyan-800: #155e75;
+$cyan-700: #0e7490;
+$cyan-600: #0891b2;
+$cyan-500: #06b6d4;
+$cyan-400: #22d3ee;
+$cyan-300: #67e8f9;
+$cyan-200: #a5f3fc;
+$cyan-100: #cffafe;
+$cyan-50: #ecfeff;
+
+$teal-900: #134e4a;
+$teal-800: #115e59;
+$teal-700: #0f766e;
+$teal-600: #0d9488;
+$teal-500: #14b8a6;
+$teal-400: #2dd4bf;
+$teal-300: #5eead4;
+$teal-200: #99f6e4;
+$teal-100: #ccfbf1;
+$teal-50: #f0fdfa;
+
+$red-900: #7f1d1d;
+$red-800: #991b1b;
+$red-700: #b91c1c;
+$red-600: #dc2626;
+$red-500: #ef4444;
+$red-400: #f87171;
+$red-300: #fca5a5;
+$red-200: #fecaca;
+$red-100: #fee2e2;
+$red-50: #fef2f2;
+
+$green-900: #14532d;
+$green-800: #166534;
+$green-700: #15803d;
+$green-600: #16a34a;
+$green-500: #22c55e;
+$green-400: #4ade80;
+$green-300: #86efac;
+$green-200: #bbf7d0;
+$green-100: #dcfce7;
+$green-50: #f0fdf4;
+
+$yellow-900: #713f12;
+$yellow-800: #854d0e;
+$yellow-700: #a16207;
+$yellow-600: #ca8a04;
+$yellow-500: #eab308;
+$yellow-400: #facc15;
+$yellow-300: #fde047;
+$yellow-200: #fef08a;
+$yellow-100: #fef9c3;
+$yellow-50: #fefce8;
+
+$orange-500: #f97316;
+$orange-400: #fb923c;
+$orange-200: #fed7aa;
+$orange-100: #ffedd5;
+$orange-50: #fff7ed;
+
+$amber-200: #fde68a;
+$amber-100: #fef3c7;
+$purple-500: #a855f7;
+$pink-500: #ec4899;
+
+$primary-lighter-8: #d6dffb;
+$primary-lighter-9: $blue-100;
+$primary-lighter-10: $blue-50;
+$primary-lighter-11: #f3f5fe;
+$primary-lighter-12: #f7f9fe;
+$primary-lighter-14: #fbfcff;
+$primary-lighter-15: #fdfdff;
+
+$brand-color: #790000;
+$emd-background-color: #edf2f9;
+$pdf-color: #f40f02;
+
+$dropzone-border: #dee2e6;
+$dropzone-border-hover: #1eb7ff;
+$dropzone-background-hover: rgba(30, 183, 255, 0.1);
+
+$highlight-green: rgb(203, 246, 225);
+$highlight-green2: rgb(221, 249, 245);
+$highlight-yellow: rgb(253, 255, 50);
+$byline-green: rgb(28, 213, 189);
+
+$emd-title-font: "futura-pt", sans-serif;
+
+$box-shadow: 0 8px 32px rgb(77 101 117 / 35%);
+$box-shadow-success: 0 0 0 0.15rem rgba(38, 223, 145, 0.5);
+$box-shadow-light: 0 0 0 0.15rem rgba(207, 215, 225, 0.5);
+$box-shadow-primary: 0 0 0 0.15rem rgba(44, 123, 229, 0.5);
+$box-shadow-secondary: 0 0 0 0.15rem rgba(0, 0, 0, 0.5);
+$box-shadow-error: 0 0 0 0.15rem rgba(255, 0, 0, 0.5);
+$box-shadow-warning: 0 0 0 0.15rem rgba(255, 255, 0, 0.5);
+$box-shadow-info: 0 0 0 0.15rem rgba(0, 0, 255, 0.5);
+
+$enable-gradients: true;
+$enable-negative-margins: true;
+//$enable-shadows: true;
+
+$offcanvas-box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175);
+
+$font-size-base: 0.95rem;
+
+@media print {
+	$font-size-base: 0.875rem;
+}
+
+$font-size-sm: $font-size-base * 0.9;
+$font-size-lg: $font-size-base * 1.3;
+
+$font-weight-lighter: lighter;
+$font-weight-light: 300;
+$font-weight-normal: 400;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+$font-weight-bolder: bolder;
+$font-weight-base: $font-weight-normal;
+
+$line-height-base: 1.5;
+$line-height-sm: 1.25;
+$line-height-lg: 2;
+
+$h1-font-size: $font-size-base * 2.25;
+$h2-font-size: $font-size-base * 1.75;
+$h3-font-size: $font-size-base * 1.5;
+$h4-font-size: $font-size-base * 1.25;
+$h5-font-size: $font-size-base * 1;
+$h6-font-size: $font-size-base * 0.75;
+
+$spacer: 1rem;
+
+$primary: $blue-600;
+$secondary: $gray-500;
+$success: $green-600;
+$danger: $red-700;
+$warning: $yellow-500;
+$info: $sky-500;
+$light: $gray-100;
+$dark: $gray-800;
+$muted: $gray-600;
+$body-bg: $slate-50;
+$body-color: $gray-700;
+$bs-btn-hover-bg: $slate-100;
+$table-hover-bg: $sky-50;
+
+// Breakpoints
+$grid-breakpoints: (
+	xs: 0,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);
+
+$font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+:root {
+	--indigo-900: #{$indigo-900};
+	--indigo-800: #{$indigo-800};
+	--indigo-700: #{$indigo-700};
+	--indigo-600: #{$indigo-600};
+	--indigo-500: #{$indigo-500};
+	--indigo-400: #{$indigo-400};
+	--indigo-300: #{$indigo-300};
+	--indigo-200: #{$indigo-200};
+	--indigo-100: #{$indigo-100};
+	--indigo-50: #{$indigo-50};
+
+	--blue-900: #{$blue-900};
+	--blue-800: #{$blue-800};
+	--blue-700: #{$blue-700};
+	--blue-600: #{$blue-600};
+	--blue-500: #{$blue-500};
+	--blue-400: #{$blue-400};
+	--blue-300: #{$blue-300};
+	--blue-200: #{$blue-200};
+	--blue-100: #{$blue-100};
+	--blue-50: #{$blue-50};
+
+	--slate-900: #{$slate-900};
+	--slate-800: #{$slate-800};
+	--slate-700: #{$slate-700};
+	--slate-600: #{$slate-600};
+	--slate-500: #{$slate-500};
+	--slate-400: #{$slate-400};
+	--slate-300: #{$slate-300};
+	--slate-200: #{$slate-200};
+	--slate-100: #{$slate-100};
+	--slate-50: #{$slate-50};
+
+	--gray-900: #{$gray-900};
+	--gray-800: #{$gray-800};
+	--gray-700: #{$gray-700};
+	--gray-600: #{$gray-600};
+	--gray-500: #{$gray-500};
+	--gray-400: #{$gray-400};
+	--gray-300: #{$gray-300};
+	--gray-200: #{$gray-200};
+	--gray-100: #{$gray-100};
+	--gray-50: #{$gray-50};
+
+	--sky-900: #{$sky-900};
+	--sky-800: #{$sky-800};
+	--sky-700: #{$sky-700};
+	--sky-600: #{$sky-600};
+	--sky-500: #{$sky-500};
+	--sky-400: #{$sky-400};
+	--sky-300: #{$sky-300};
+	--sky-200: #{$sky-200};
+	--sky-100: #{$sky-100};
+	--sky-50: #{$sky-50};
+
+	--teal-900: #{$teal-900};
+	--teal-800: #{$teal-800};
+	--teal-700: #{$teal-700};
+	--teal-600: #{$teal-600};
+	--teal-500: #{$teal-500};
+	--teal-400: #{$teal-400};
+	--teal-300: #{$teal-300};
+	--teal-200: #{$teal-200};
+	--teal-100: #{$teal-100};
+	--teal-50: #{$teal-50};
+
+	--cyan-900: #{$cyan-900};
+	--cyan-800: #{$cyan-800};
+	--cyan-700: #{$cyan-700};
+	--cyan-600: #{$cyan-600};
+	--cyan-500: #{$cyan-500};
+	--cyan-400: #{$cyan-400};
+	--cyan-300: #{$cyan-300};
+	--cyan-200: #{$cyan-200};
+	--cyan-100: #{$cyan-100};
+	--cyan-50: #{$cyan-50};
+
+	--white: #{$white};
+
+	--red-900: #{$red-900};
+	--red-800: #{$red-800};
+	--red-700: #{$red-700};
+	--red-600: #{$red-600};
+	--red-500: #{$red-500};
+	--red-400: #{$red-400};
+	--red-300: #{$red-300};
+	--red-200: #{$red-200};
+	--red-100: #{$red-100};
+	--red-50: #{$red-50};
+
+	--green-900: #{$green-900};
+	--green-800: #{$green-800};
+	--green-700: #{$green-700};
+	--green-600: #{$green-600};
+	--green-500: #{$green-500};
+	--green-400: #{$green-400};
+	--green-300: #{$green-300};
+	--green-200: #{$green-200};
+	--green-100: #{$green-100};
+	--green-50: #{$green-50};
+
+	--yellow-900: #{$yellow-900};
+	--yellow-800: #{$yellow-800};
+	--yellow-700: #{$yellow-700};
+	--yellow-600: #{$yellow-600};
+	--yellow-500: #{$yellow-500};
+	--yellow-400: #{$yellow-400};
+	--yellow-300: #{$yellow-300};
+	--yellow-200: #{$yellow-200};
+	--yellow-100: #{$yellow-100};
+	--yellow-50: #{$yellow-50};
+
+	--orange-500: #{$orange-500};
+	--orange-400: #{$orange-400};
+	--orange-200: #{$orange-200};
+	--orange-100: #{$orange-100};
+	--orange-50: #{$orange-50};
+
+	--purple-500: #{$purple-500};
+	--pink-500: #{$pink-500};
+	--amber-200: #{$amber-200};
+	--amber-100: #{$amber-100};
+	--green-500: #{$green-500};
+	--teal-500: #{$teal-500};
+
+	--primary-lighter-8: #{$primary-lighter-8};
+	--primary-lighter-9: #{$primary-lighter-8};
+	--primary-lighter-10: #{$primary-lighter-10};
+	--primary-lighter-11: #{$primary-lighter-11};
+	--primary-lighter-12: #{$primary-lighter-12};
+	--primary-lighter-14: #{$primary-lighter-14};
+	--primary-lighter-15: #{$primary-lighter-15};
+
+	--brand-color: #{$brand-color};
+	--emd-background-color: #{$emd-background-color};
+
+	--box-shadow: #{$box-shadow};
+	--box-shadow-success: #{$box-shadow-success};
+	--box-shadow-light: #{$box-shadow-light};
+	--box-shadow-primary: #{$box-shadow-primary};
+
+	--dropzone-border: #{$dropzone-border};
+	--dropzone-border-hover: #{$dropzone-border-hover};
+	--dropzone-background-hover: #{$dropzone-background-hover};
+
+	--emd-title-font: #{$emd-title-font};
+	--pdf-color: #{$pdf-color};
+
+	--highlight-green: #{$highlight-green};
+	--highlight-green2: #{$highlight-green2};
+	--highlight-yellow: #{$highlight-yellow};
+	--byline-green: #{$byline-green};
+}
+
+@import "~bootstrap/scss/bootstrap.scss";
+
+@import "./styles/typekit", "./styles/site", "./styles/gradients", "./styles/tables", "./styles/navigation",
+	"./styles/forms", "./styles/dropdown", "./styles/lists", "./styles/card", "./styles/badges", "./styles/animation",
+	"./styles/accordian", "./styles/progressBar", "./styles/svgIcons", "./styles/buttons", "./styles/colors";
