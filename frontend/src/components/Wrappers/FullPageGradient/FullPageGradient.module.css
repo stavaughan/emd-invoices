@@ -1,0 +1,16 @@
+.fp-bg-gradient {
+	position:absolute;
+	top:0px;
+	right:0px;
+	bottom:0px;
+	left:0px;
+    width: 100%;
+    height: 100vh;
+	background-image: linear-gradient(to top right, rgba(18, 111, 235, .7), rgba(114, 3, 225, .7)), url(./../../../globals/img/covers/background-decoration-2.jpg);
+	background-repeat: no-repeat, no-repeat;
+	background-position: 20%, 20%;
+	background-size: cover, cover;
+	background-origin: content-box;
+	border-color: transparent;
+	overflow: auto;
+}
