@@ -1,0 +1,114 @@
+.badge {
+	display: inline-block;
+	padding: .38em .65em;
+	font-size: 75%;
+	font-weight: 500;
+	border-radius: .375rem;
+}
+
+.badge:empty {
+	display: none
+}
+
+.badge.rounded-pill {
+	padding-right: .6em;
+	padding-left: .6em
+}
+
+.badge.bg-info,
+.badge.bg-primary,
+.badge.bg-secondary,
+.badge.bg-success {
+	color: white
+}
+
+.badge.bg-warning {
+	color: var(--blue-700)
+}
+
+.badge.bg-danger {
+	color: white;
+	background-color: var(--red-700)
+}
+
+.badge.bg-light {
+	color: var(--blue-700)
+}
+
+.badge.bg-dark {
+	color: white
+}
+
+.badge.bg-white {
+	color: var(--blue-700)
+}
+
+.badge.bg-primary-soft,
+.bg-primary-soft {
+	color: var(--blue-600)
+}
+
+.bg-muted-soft {
+	color: var(--gray-400);
+	background-color: var(--gray-200)
+}
+
+.badge.bg-primary-soft[href]:focus,
+.badge.bg-primary-soft[href]:hover {
+	background-color: var(--blue-200) !important
+}
+
+.badge.bg-success-soft {
+	color: var(--green-700)
+}
+
+.badge.bg-success-soft[href]:focus,
+.badge.bg-success-soft[href]:hover {
+	background-color: var(--green-200) !important
+}
+
+.badge.bg-info-soft {
+	color: var(--teal-700)
+}
+
+.badge.bg-info-soft[href]:focus,
+.badge.bg-info-soft[href]:hover {
+	background-color: var(--teal-200) !important
+}
+
+.badge.bg-warning-soft {
+	color: var(--yellow-700);
+}
+
+.badge.bg-warning-soft[href]:focus,
+.badge.bg-warning-soft[href]:hover {
+	background-color: var(--yellow-200) !important
+}
+
+.badge.bg-danger-soft {
+	color: var(--red-700)
+}
+
+.badge.bg-danger-soft[href]:focus,
+.badge.bg-danger-soft[href]:hover {
+	background-color: var(--red-200) !important
+}
+
+.badge.bg-light-soft {
+	color: var(--slate-700)
+}
+
+.badge.bg-light-soft[href]:focus,
+.badge.bg-light-soft[href]:hover {
+	background-color: var(--slate-200) !important
+}
+
+.btn .badge {
+	position: relative;
+	top: -1px
+}
+
+.badge-light {
+	color: var(--blue-700);
+	background-color: var(--primary-lighter-10);
+}

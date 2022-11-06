@@ -1,0 +1,67 @@
+@-webkit-keyframes progress-bar-stripes {
+	0% {
+		background-position-x: 1rem
+	}
+}
+
+@keyframes progress-bar-stripes {
+	0% {
+		background-position-x: 1rem
+	}
+}
+
+.progress {
+	height: 1rem;
+	font-size: .70313rem;
+	background-color: var(--emd-background-color);
+	border-radius: 200px
+}
+
+.progress-bar:first-child {
+	border-top-left-radius: 200px;
+	border-bottom-left-radius: 200px
+}
+
+.progress-bar:last-child {
+	border-top-right-radius: 200px;
+	border-bottom-right-radius: 200px
+}
+
+.progress,
+.progress-bar {
+	display: flex;
+	overflow: hidden
+}
+
+.progress-bar {
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	text-align: center;
+	white-space: nowrap;
+	background-color: var(--blue-600);
+	transition: width .6s ease
+}
+
+@media (prefers-reduced-motion:reduce) {
+	.progress-bar {
+		transition: none
+	}
+}
+
+.progress-bar-striped {
+	background-image: linear-gradient(45deg, hsla(0, 0%, 100%, .15) 25%, transparent 0, transparent 50%, hsla(0, 0%, 100%, .15) 0, hsla(0, 0%, 100%, .15) 75%, transparent 0, transparent);
+	background-size: 1rem 1rem
+}
+
+.progress-bar-animated {
+	-webkit-animation: progress-bar-stripes 1s linear infinite;
+	animation: progress-bar-stripes 1s linear infinite
+}
+
+@media (prefers-reduced-motion:reduce) {
+	.progress-bar-animated {
+		-webkit-animation: none;
+		animation: none
+	}
+}

@@ -1,0 +1,98 @@
+thead, tbody, tfoot, tr, td, th, .table {
+	vertical-align: middle;
+}
+
+.table {
+	--bs-table-bg: transparent;
+	--bs-table-striped-color: inherit !important;
+	--bs-table-striped-bg: var(--slate-100);
+	--bs-table-active-bg: var(--sky-100);
+	--bs-table-hover-color: inherit !important;
+	--bs-table-hover-bg: var(--slate-50);
+	margin-bottom: 1.5rem;
+	color: inherit !important;
+	border-color: var(--slate-100)
+}
+
+.table thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid var(--slate-200);
+	border-bottom-color: var(--slate-200);
+	background-color: transparent;
+	text-transform: uppercase;
+	font-size: .675rem;
+	letter-spacing: .08em;
+	color: inherit !important;
+}
+
+.table-sm {
+	font-size: .825rem
+}
+
+.table a[class*=text-reset]:hover {
+	color: var(--blue-600) !important
+}
+
+.table>:not(:last-child)>:last-child>* {
+	border-bottom-color: var(--slate-100);
+}
+
+.table>:not(:first-child) {
+	border-top: 2px solid var(--slate-200);
+}
+
+.table>:not(caption)> * > * {
+	padding: 0.75rem 0.5rem;
+	background-color: transparent;
+}
+
+.table>:last-child>:last-child>* {
+	border-bottom-color: transparent;
+}
+
+.table-hover>tbody>tr.listing-page-row:not(.listing-page-row.active):hover,
+.table-striped>tbody>tr.listing-page-row:not(.listing-page-row.active):hover,
+.table-striped>tbody>tr.listing-page-row:nth-of-type(odd)>*,
+.table-striped>tbody>tr.listing-page-row:nth-of-type(2n) {
+	--bs-table-accent-bg: var(--bs-table-hover-bg);
+	color: var(--gray-600);
+}
+
+.table-hover>tbody>tr.listing-page-row:active:hover,
+.table-hover>tbody>tr.listing-page-row:active,
+tr.listing-page-row.active:hover,
+tr.listing-page-row.active  {
+	--bs-table-accent-bg: var(--sky-50);
+	color: var(--blue-700);
+}
+
+@media (max-width:575.98px) {
+	.table-sm {
+		font-size: .775rem
+	}
+	.table thead th {
+		font-size: .665rem
+	}
+}
+
+.table-hover > tbody > tr:hover > *:not(.active) {
+    // --bs-table-accent-bg: var(--bs-table-hover-bg);
+	--bs-table-accent-bg: inherit;
+    color: var(--bs-table-hover-color);
+}
+
+tr.listing-page-row.active td div button svg:hover {
+	color: var(--blue-600);
+}
+
+tr.listing-page-row td div button svg:hover {
+	color: var(--slate-500);
+}
+
+tr td:first-child svg {
+	color: var(--slate-300);
+}
+
+tr.active td:first-child svg {
+	color: var(--blue-600);
+}
