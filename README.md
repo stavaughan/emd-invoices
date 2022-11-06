@@ -52,7 +52,7 @@ npm install
 ### Install dependencies frontend
 
 ```node
-> cd frontend && npm install
+cd frontend && npm install
 ```
 
 ### Start the development server
