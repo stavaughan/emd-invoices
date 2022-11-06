@@ -1,0 +1,198 @@
+:root {
+	--invoice-background-color: var(--gray-200);
+    --invoice-background-color1: var(--gray-100);
+	--invoice-background-color2: var(--gray-200);
+    --invoice-border: var(--gray-300);
+    --invoice-font-title: var(--emd-title-font);
+	--invoice-text-dark: var(--gray-900);
+    --invoice-text-gray: var(--gray-600);
+	--mask-image: url('../images/stamp-background.png');
+	--mask-size: 58.5rem 37.45rem;
+	--mask-position: 11rem 5rem;
+}
+
+.invoice {
+    background-color: white;
+    min-height: 1056px;
+    padding: 0 1.9rem;
+}
+
+.invoice header {
+    margin-bottom: 1.8em;
+}
+
+.invoice main .thanks {
+    margin-top: -5em;
+    font-size: 1.4em;
+    max-width: 6em;
+    color: var(--gray-800);
+    margin-left: 2em;
+}
+
+/* @media (max-width:575.98px) {
+    .invoice header {
+        margin-bottom: 1rem;
+        border-bottom: 0;
+    }
+
+    .invoice main .thanks {
+        margin-top: -7.2rem;
+        margin-left: 1em;
+        font-size: 1.2em;
+    }
+} */
+
+.invoice .company-details .name {
+    font-family: var(--invoice-font-title);
+    font-weight: 500;
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.invoice .small-name {
+    font-family: var(--invoice-font-title);
+    font-weight: 600;
+    font-size: 1.6em;
+}
+
+.invoice header .stamp {
+    margin-top: .8em;
+    margin-left: 8em;
+    z-index: 5;
+    transform: rotate(-14deg);
+    font-size: 1.6em;
+    font-weight: 700;
+    border: 0.3em solid;
+    display: inline-block;
+    padding: 0.13em .8em;
+    text-transform: uppercase;
+    border-radius: .18rem;
+    font-family: 'Courier';
+	mask-image: var(--mask-image);
+    mask-size: var(--mask-size);
+	mask-position: var(--mask-position);
+    mix-blend-mode: multiply;
+}
+
+.invoice table {
+    width: 100%;
+    table-layout:auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin-bottom: 1.24rem;
+}
+
+.invoice table th {
+    background: var(--invoice-background-color2);
+	opacity: .8;
+    border-bottom: 1px solid white;
+}
+
+.invoice table td {
+    background: var(--invoice-background-color1);
+    border-bottom: 1px solid white;
+}
+
+.invoice table td,
+.invoice table tfoot tr td {
+    font-size: .85rem;
+}
+
+.invoice table .td-desc {
+    padding-left: 1em;
+    min-width: 50%;
+	background: var(--invoice-background-color1);
+	border-right: 1px solid white;
+}
+
+.invoice table th {
+    white-space: nowrap;
+    font-weight: 600;
+	font-size: .675rem
+}
+
+.invoice table .invoice-number {
+    font-size: 1.5em;
+    width: 5.5em;
+}
+
+.invoice table .unit,
+.invoice table .invoice-number {
+    background: var(--invoice-background-color2);
+	border-right: 1px solid white;
+}
+
+.invoice table .total {
+	background: var(--invoice-background-color);
+}
+
+.invoice table tbody tr:last-child td {
+    border: none;
+}
+
+.invoice table tfoot td {
+    background: 0 0;
+    border-bottom: none;
+    white-space: nowrap;
+    text-align: right;
+    padding: .45em .8em;
+    border-top: 1px solid var(--invoice-border);
+}
+
+.invoice table tfoot tr:first-child td {
+    border-top: none;
+}
+
+.invoice table tfoot tr:last-child td {
+    border-bottom: 1px solid var(--invoice-border);
+}
+
+.invoice table tfoot tr td:first-child {
+    border: none;
+}
+
+.invoice .invoice-footer {
+    width: 94%;
+    bottom: 2.6em;
+    text-align: center;
+    color: var(--invoice-text-gray);
+    border-top: 1px solid var(--invoice-border);
+    padding: 0;
+}
+
+.color-swatch {
+	border-left: 24px solid #000;
+	padding-left: 10px;
+	margin-top: 20px;
+}
+
+@media print {
+
+    .invoice {
+        overflow: hidden !important;
+        width: 8.5in;
+        margin-left: 0;
+        margin-right: 0;
+        min-height: 11in;
+        box-shadow:none;
+        font-size:.9em;
+    }
+
+    .invoice table .invoice-number {
+        width: 4.4em;
+    }
+
+    .invoice main {
+        background-color: white;
+    }
+
+    .invoice>div:last-child {
+        page-break-before: always;
+    }
+
+    .invoice .invoice-footer {
+        border-top: 0;
+        border-bottom: 1px solid var(--invoice-border);
+        bottom: 2.5em;
+    }
+}
