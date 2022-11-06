@@ -4,26 +4,26 @@ A MERN Stack Application to Manage Invoices for multiple businesses
 
 ## Ideal For
 
-- Self Employed
-- Sole proprietorship
-- Partnership
-- Limited Liability Company (LLC)
-- S Corporation
-- C Corporation
-- 501(c)(3)
-- DBA
-- etc
+- [x] Self Employed
+- [x] Sole proprietorship
+- [x] Partnership
+- [x] Limited Liability Company (LLC)
+- [x] S Corporation
+- [x] C Corporation
+- [x] 501(c)(3)
+- [x] DBA
+- [x] etc
 
 ## Features
 
-- Filter by business
-- Feature by customers
-- Feature by Fiscal Year
-- Search by Invoice number
-- Dynamic invoice number creation
-- Display images on the invoice
-- Send estimates
-- Save as pdf or send pdf to a local printer
+- [x] Filter by business
+- [x] Feature by customers
+- [x] Feature by Fiscal Year
+- [x] Search by Invoice number
+- [x] Dynamic invoice number creation
+- [x] Display images on the invoice
+- [x] Send estimates
+- [x] Save as pdf or send pdf to a local printer
 
 ## Screenshots
 
@@ -52,7 +52,7 @@ npm install
 ### Install dependencies frontend
 
 ```node
-cd frontend && npm install
+> cd frontend && npm install
 ```
 
 ### Start the development server
@@ -71,12 +71,13 @@ Once the frontend static file has been compiled you can deploy your app on your 
 
 ## Community
 
-- Contribute on [Issues](https://github.com/stavaughan/emd-invoices/issues)
+Contribute on [Issues](https://github.com/stavaughan/emd-invoices/issues)
 
 ## Contact
 
-- LinkedIn: [www.linkedin.com/in/stephenavaughan](https://www.linkedin.com/in/stephenavaughan/)
-- twitter: [@Stephen26503352](https://twitter.com/Stephen26503352)
+LinkedIn: [www.linkedin.com/in/stephenavaughan](https://www.linkedin.com/in/stephenavaughan/)
+
+twitter: [@Stephen26503352](https://twitter.com/Stephen26503352)
 
 ## License
 
