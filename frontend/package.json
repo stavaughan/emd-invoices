@@ -1,8 +1,9 @@
 {
 	"name": "emd-invoices-frontend",
 	"description": "React, Redux, Express, MongoDB, Invoices app",
-	"version": "0.9.0",
-	"private": true,
+	"version": "1.0.0",
+	"author": "Stephen Vaughan",
+	"license": "ISC",
 	"dependencies": {
 		"@cloudinary/react": "^1.5.0",
 		"@cloudinary/url-gen": "^1.8.6",
