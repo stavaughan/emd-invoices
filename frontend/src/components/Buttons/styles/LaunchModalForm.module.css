@@ -1,0 +1,44 @@
+.expandButton {
+    border-color: var(--blue-500);
+    /* border-radius: 3.5rem; */
+    background-color: transparent;
+    color: var(--blue-500);
+    text-decoration: none;
+    height: 1.74rem;
+    display: inline-flex;
+    align-items: center;
+    overflow: hidden;
+    width: auto;
+    max-width: 1.74rem;
+    -webkit-transition: max-width 0.8s;
+    transition: max-width 0.8s;
+}
+
+.expandIcon {
+    font-size: .87rem;
+    margin-right: .62rem;
+    padding: 0rem .5rem;
+    display: flex;
+    align-items: center;
+}
+
+.expandText {
+    white-space: nowrap;
+    padding-right: .62rem;
+    letter-spacing: .06rem;
+}
+
+.expandButton:hover {
+    max-width: 18.6rem;
+}
+
+.expandButton:hover,
+.expandIcon:hover {
+    background-color: transparent;
+    color: var(--blue-500);
+}
+
+.expandText:hover {
+    background-color: transparent;
+    color: var(--blue-600);
+}

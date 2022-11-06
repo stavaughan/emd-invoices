@@ -1,0 +1,49 @@
+:root {
+	--input-padding-x: 1.5rem;
+	--input-padding-y: .75rem;
+}
+
+.centered-card--signin {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: no-wrap;
+	background-color: #fff;
+	background-clip: border-box;
+	border: 0;
+	border-radius: .5rem;
+	box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.centered-card--signin .centered-card--logo {
+	text-align: center !important;
+}
+
+.centered-card--signin .centered-card--title {
+	text-align: center !important;
+	color: var(--gray-600);
+	margin-top: 1.5rem;
+	margin-bottom: 2rem;
+	font-weight: 400;
+	font-size: 1.8rem;
+}
+
+.centered-card--signin .centered-card--body {
+	padding: 1rem 2rem;
+}
+
+@media screen and (max-width: 592px) {
+	.centered-card--signin {
+		margin-top: .5rem;
+		margin-left: .5rem;
+		margin-right: .5rem;
+	}
+	.centered-card--signin .centered-card--title {
+		margin-top: .5rem;
+		font-size: 1.6rem;
+	}
+	.centered-card--signin .centered-card--body {
+		padding: 1rem 1.4rem;
+	}
+}

@@ -1,0 +1,33 @@
+:root {
+	--ring-offset-color: #fff;
+	--shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+}
+
+.shadow {
+    --shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1),0 1px 2px -1px rgb(0 0 0 / 0.1);
+    --shadow-colored: 0 1px 3px 0 var(--shadow-color),0 1px 2px -1px var(--shadow-color);
+    box-shadow: var(--ring-offset-shadow,0 0 #0000),var(--ring-shadow,0 0 #0000),var(--shadow);
+}
+
+.btn.focus\:outline-none:focus {
+	outline: 2px solid transparent;
+	outline-offset: 2px;
+}
+
+.btn.focus\:ring-2:focus {
+	--ring-offset-shadow: var(--ring-inset) 0 0 0 2px var(--ring-offset-color);
+	--ring-shadow: var(--ring-inset) 0 0 0 calc(2px + 2px) var(--indigo-500);
+	box-shadow: var(--ring-offset-shadow),var(--ring-shadow),var(--shadow,0 0 #0000);
+}
+
+.btn.focus\:ring-indigo-500:focus {
+	--ring-color: var(--indigo-500);
+}
+
+.btn.focus\:ring-blue-500:focus {
+	--ring-color: var(--blue-500);
+}
+
+.btn.focus\:ring-offset-2:focus {
+	--ring-offset-width: 2px;
+}

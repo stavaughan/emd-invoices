@@ -1,0 +1,71 @@
+/* .focus-within\:ring-2:focus-within, */
+.focus-within\:ring-2:focus,
+.focus-within\:ring-2.active {
+    box-shadow: 0 0 0 0px #fff,0 0 0 calc(2px + 0px) var(--blue-500),0 0 #0000;
+}
+
+.focus\:outline-none:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.focus-visible\:outline-2:focus-visible {
+    outline-width: 2px;
+}
+
+.focus-visible\:outline-blue-500:focus-visible {
+    outline-color: var(--blue-500);
+}
+
+.wrapper {
+    display: grid;
+    margin-bottom: 3rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: .6rem;
+    grid-auto-rows: 12.4rem;
+    grid-template-areas:
+        ". a a ."
+        ". a a .";
+}
+
+.centered-content {
+    grid-area: a;
+    align-self: center;
+    justify-self: center;
+}
+
+.empty-state--details {
+    max-width: 40rem;
+}
+
+.empty-state--text-main {
+    font-size: 1.17rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+.empty-state--text-content {
+    font-size: 1.03rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-transform: none;
+    letter-spacing: normal;
+    padding-bottom: .8rem;
+}
+
+.empty-state--actions-container {
+    margin-top: 1.6rem;
+}
+
+.empty-state--actions {
+    align-items: center;
+    justify-content: center;
+    margin-top: -.8rem;
+    margin-left: -.8rem;
+}
+
+.empty-state--action-item {
+    margin-top: 1.2rem;
+    margin-left: 1.2rem;
+    max-width: 100%;
+}
