@@ -73,12 +73,6 @@ Once the frontend static file has been compiled you can deploy your app on your 
 
 - Contribute on [Issues](https://github.com/stavaughan/emd-invoices/issues)
 
-## Donation
-
-Support me to work on this project :raised_hands:
-
-[![Donate](https://img.shields.io/static/v1?label=Sponsor&message=%E2%9D%A4&logo=GitHub)](https://github.com/sponsors/Merida2011)
-
 ## Contact
 
 - LinkedIn: [www.linkedin.com/in/stephenavaughan](https://www.linkedin.com/in/stephenavaughan/)
@@ -86,4 +80,4 @@ Support me to work on this project :raised_hands:
 
 ## License
 
-MIT License
+BSD 4-Clause License
