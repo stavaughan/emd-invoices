@@ -1,0 +1,63 @@
+.bd-masthead {
+	padding: 2rem 0;
+	background: linear-gradient(15deg, var(--blue-50) 50%, var(--slate-50) 50%);
+}
+
+.bd-masthead .btn {
+	padding: 0.8rem 2rem;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+	.bd-masthead {
+		padding: 1rem 0;
+	}
+}
+
+.gradient-indigo {
+	background-image: -webkit-gradient(linear, left bottom, right top, from(var(--indigo-800)), to(var(--indigo-500)));
+	background-image: linear-gradient(to right top, var(--indigo-800), var(--indigo-500));
+}
+
+@keyframes gradientborder {
+	0% {
+		background-position: 0% 50%;
+	}
+
+	50% {
+		background-position: 100% 50%;
+	}
+
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.gradient-border {
+	--borderWidth: 3px;
+	background: inherit;
+	position: relative;
+	border-radius: var(--borderWidth);
+}
+
+.gradient-border:after {
+	content: '';
+	position: absolute;
+	top: calc(-1 * var(--borderWidth));
+	left: calc(-1 * var(--borderWidth));
+	height: calc(100% + var(--borderWidth) * 2);
+	width: calc(100% + var(--borderWidth) * 2);
+	background: linear-gradient(60deg,
+			var(--indigo-800),
+			var(--indigo-700),
+			var(--indigo-600),
+			var(--indigo-500),
+			var(--indigo-400),
+			var(--indigo-300),
+			var(--indigo-200),
+			var(--indigo-100));
+	border-radius: calc(2 * var(--borderWidth));
+	z-index: -1;
+	animation: gradientborder 3s ease alternate infinite;
+	background-size: 300% 300%;
+}

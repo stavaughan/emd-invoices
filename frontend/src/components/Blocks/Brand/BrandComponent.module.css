@@ -1,0 +1,79 @@
+.emd-brand--name {
+    font-family: var(--emd-title-font);
+    font-weight: 400;
+    font-size: 1.95rem;
+    letter-spacing: .08rem;
+}
+
+.emd-brand--trademark {
+    font-family: var(--bs-font-sans-serif);
+    padding-left: 0.1875rem !important;
+    top: -.9rem;
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: .07rem;
+}
+
+.emd-brand--color div .emd-brand--name {
+    color: var(--brand-color);
+}
+
+.emd-brand--non-color div .emd-brand--name {
+    color: white;
+}
+
+.emd-brand--color div .emd-brand--name .emd-brand--trademark {
+    color: var(--brand-color);
+	font-size: .8rem;
+}
+
+.emd-brand--non-color div .emd-brand--name .emd-brand--trademark {
+    color: #edf2f9
+}
+
+.emd-brand--name-sm {
+    font-family: var(--emd-title-font);
+    color: var(--brand-color);
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+.emd-brand--non-color.emd-brand--small .flex-grow-1 .emd-brand--name {
+    color: #edf2f9;
+    font-size: .81rem;
+    font-weight: 400;
+    letter-spacing: .05rem;
+}
+
+.emd-brand--logo svg {
+    width: 4rem;
+}
+
+.emd-brand-login--logo svg {
+    width:5rem;
+}
+
+@media (max-width: 767.98px) {
+
+    .emd-brand--logo svg {
+        width:2.7rem;
+    }
+
+	.emd-brand-login--logo svg {
+		width:4rem;
+	}
+
+    .emd-brand--name {
+        font-size: 1.5rem;
+        letter-spacing: .05rem;
+    }
+
+	.emd-brand--color div .emd-brand--name .emd-brand--trademark {
+        padding-left: 0.1rem !important;
+        top: -.75rem;
+		right: .1rem;
+        font-weight: 700;
+        font-size: .6rem;
+        letter-spacing: .07em;
+	}
+}

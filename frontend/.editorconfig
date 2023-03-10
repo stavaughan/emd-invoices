@@ -1,0 +1,8 @@
+[*]
+tab_width = 4
+indent_style = tab
+# (Please don't specify an indent_size here; that has too many unintended consequences.)
+
+# Code files
+[*.{cs,csx,js,jsx,vb,vbx}]
+indent_size = 4

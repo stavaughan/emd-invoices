@@ -1,0 +1,107 @@
+.avatar-title {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+	line-height: 0;
+	background-color: var(--slate-300);
+	color: white
+}
+
+.avatar-xs {
+	width: 1.625rem;
+	height: 1.625rem;
+	font-size: .54167rem;
+	display: inline-block;
+}
+
+.avatar-sm {
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: .83333rem;
+	display: inline-block;
+}
+
+.avatar-md {
+	width: 2.75rem;
+	height: 2.75rem;
+	font-size: .9rem;
+	display: inline-block;
+}
+
+.avatar-lg {
+	width: 4rem;
+	height: 4rem;
+	font-size: 1.33333rem;
+	display: inline-block;
+}
+
+.icon {
+	display: inline-block
+}
+
+.icon.active {
+	position: relative
+}
+
+.icon.active:after {
+	content: "";
+	position: absolute;
+	top: 10%;
+	right: 20%;
+	width: 20%;
+	height: 20%;
+	border-radius: 50%;
+	background-color: var(--blue-600)
+}
+
+.userAvatar {
+	border-radius: 50%;
+	background: var(--blue-100);
+	width: 36px;
+	height: 36px;
+	margin: -8px 0;
+	float: left;
+	margin-right: 10px;
+}
+
+.icon-primary {
+	background-color: var(--slate-100);
+	color: var(--blue-600);
+}
+
+.svg-icon.svg-icon-3 svg {
+	height: 1.35rem !important;
+	width: 1.35rem !important;
+}
+
+.svg-icon.svg-icon-4 svg {
+	height: 1.15rem !important;
+	width: 1.15rem !important;
+}
+
+.svg-icon {
+	line-height: 1;
+}
+
+.svg-icon svg {
+	height: 1.15rem;
+	width: 1.15rem;
+}
+
+.svg-icon svg [fill]:not(.permanent):not(g) {
+	transition: fill .3s ease;
+	fill: var(--slate-400);
+}
+
+.btn .svg-icon {
+	flex-shrink: 0;
+	line-height: 0;
+	margin-right: 0.5rem;
+}
+
+.btn.btn-primary .svg-icon svg [fill]:not(.permanent):not(g) {
+	transition: fill .3s ease;
+	fill: white;
+}

@@ -1,0 +1,12 @@
+@media print {
+	.print-container {
+		size: 8.5in 11in;
+		orientation: portrait;
+		counter-increment: page;
+		overflow: hidden !important;
+        box-shadow:none;
+		background-color: white;
+        margin-left: 0;
+        margin-right: 0;
+	}
+}

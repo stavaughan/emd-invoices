@@ -1,0 +1,17 @@
+.code-block {
+	overflow-x: auto;
+}
+
+.code-block .code-block--pre {
+	background: var(--slate-700);
+	color: var(--blue-100);
+	box-shadow: 0 0 0 1px var(--slate-700), 0 4px 12px -1px var(--slate-800);
+}
+
+@media print {
+	.code-block .code-block--pre {
+		background: transparent;
+		color: var(--gray-600);
+		box-shadow: none;
+	}
+}

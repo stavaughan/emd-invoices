@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 500 500">
+	<style>
+        /*path { fill: #720000; }*/
+	</style>
+	<path d="M10 300 L240 150 L240 220 L115 300 L240 380 L240 450 Z" />
+	<path d="M10 200 L240 50 L240 120 L115 200 L240 280 L240 350 Z" />
+	<path d="M490 300 L260 150 L260 220 L385 300 L260 380 L260 450 Z" />
+	<path d="M490 200 L260 50 L260 120 L385 200 L260 280 L260 350 Z" />
+</svg>

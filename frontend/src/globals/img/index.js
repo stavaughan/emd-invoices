@@ -1,0 +1,9 @@
+export { ReactComponent as ArrowDown } from './arrow-down.svg';
+export { ReactComponent as LeftArrow } from './arrow-left.svg';
+export { ReactComponent as RightArrow } from './arrow-right.svg';
+export { ReactComponent as ArrowUp } from './arrow-up.svg';
+export { ReactComponent as ExpandArrows } from './expand-arrows.svg';
+export { ReactComponent as PdfFile } from './filev2-pdf.svg';
+export { ReactComponent as AccessDeniedIcon } from './illustrations/undraw_access_denied_re_awnf.svg';
+export { ReactComponent as AddFileIcon } from './illustrations/undraw_add_files_re_v09g.svg';
+export { ReactComponent as NotFoundSVG } from './not-found-img.svg';

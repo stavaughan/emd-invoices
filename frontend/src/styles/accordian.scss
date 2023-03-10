@@ -1,0 +1,104 @@
+:root {
+	--chevron-down: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%239CA3AF'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+	--chevron-up: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%236C8AEC'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+}
+
+.accordion {
+    --bs-accordion-btn-padding-x: 1rem;
+}
+
+.accordion-button {
+	color: var(--gray-900);
+	background-color: transparent;
+	border: 1px solid var(--gray-200);
+	border-radius: 0;
+}
+
+@media (prefers-reduced-motion:reduce) {
+	.accordion-button {
+		transition: none
+	}
+}
+
+.accordion-button.collapsed {
+	border-bottom-width: 0
+}
+
+@media (prefers-reduced-motion:reduce) {
+	.accordion-button:after {
+		transition: none
+	}
+}
+
+.accordion-button:focus {
+	z-index: 3;
+	border-color: var(--blue-600);
+	outline: 0;
+	box-shadow: none
+}
+
+.accordion-item:first-of-type .accordion-button {
+	border-top-left-radius: .375rem;
+	border-top-right-radius: .375rem
+}
+
+.accordion-item:last-of-type .accordion-button.collapsed,
+.accordion-item:last-of-type .accordion-collapse {
+	border-bottom-width: 1px;
+	border-bottom-right-radius: .375rem;
+	border-bottom-left-radius: .375rem
+}
+
+.accordion-collapse {
+	border: solid rgba(18, 38, 63, .125);
+	border-width: 0 1px
+}
+
+.accordion-flush .accordion-button {
+	border-right: 0;
+	border-left: 0;
+	border-radius: 0
+}
+
+.accordion-flush .accordion-collapse {
+	border-width: 0
+}
+
+.accordion-flush .accordion-item:first-of-type .accordion-button {
+	border-top-width: 0;
+	border-top-left-radius: 0;
+	border-top-right-radius: 0
+}
+
+.accordion-flush .accordion-item:last-of-type .accordion-button.collapsed {
+	border-bottom-width: 0;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 0
+}
+
+.accordion-item {
+	background-color: transparent !important;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.accordion-button::after {
+	background-image: var(--chevron-down);
+	width: 1rem;
+	height: 1rem;
+	background-size: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+	background-color: transparent !important;
+	box-shadow: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+	background-image: var(--chevron-up);
+}
+
+@media (max-width:575.98px) {
+	.accordion {
+		--bs-accordion-btn-padding-x: .75rem;
+	}
+}

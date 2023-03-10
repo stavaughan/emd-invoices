@@ -1,0 +1,18 @@
+@media print {
+	@page {
+		size: 8.5in 11in;
+		orientation: portrait;
+		counter-increment: page;
+	}
+    .print-property {
+		position: relative;
+		overflow: hidden !important;
+        box-shadow:none;
+        font-size: 12pt;
+		background-color: white;
+    }
+
+	.print-property .inventory-qty {
+		border: 0;
+	}
+}

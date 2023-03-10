@@ -1,0 +1,72 @@
+
+
+.list-group-lg .list-group-item {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem
+}
+
+.list-group-flush>.list-group-item {
+	padding-left: 0;
+	padding-right: 0
+}
+
+.list-group-flush:not(:last-child)>.list-group-item:last-child {
+	border-bottom-width: 1px
+}
+
+.list-inline-item:not(:last-child) {
+	margin-right: .45rem
+}
+
+.list-group-item {
+	padding: .25rem .25rem;
+	background-color: transparent;
+    color: var(--gray-600);
+    border: 1px solid var(--gray-200);
+}
+
+.list-group-item a>:not(.clickable) {
+	text-decoration: none;
+}
+
+.list-group-item.disabled,
+.list-group-item:disabled {
+	color: var(--gray-400);
+	pointer-events: none;
+	background-color: transparent
+}
+
+.list-group-item.active {
+	z-index: 2;
+	color: white;
+	background-color: var(--blue-600);
+	border-color: var(--blue-600)
+}
+
+.list-group-item+.list-group-item.active {
+	margin-top: -1px;
+	border-top-width: 1px
+}
+
+.list-group-activity .list-group-item {
+	border: 0;
+}
+
+.list-group-activity .list-group-item:not(:last-child):before {
+	content: "";
+	position: absolute;
+	top: 1rem;
+	left: 1.25rem;
+	height: 100%;
+	border-left: 1px solid var(--gray-300);
+}
+
+.list-group-activity .list-group-item.detail:not(:last-child):before {
+    content: "";
+    position: absolute;
+    top: 1rem;
+    left: 1.25rem;
+    height: 100%;
+    border-left: 0;
+}
+

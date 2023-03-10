@@ -1,0 +1,51 @@
+/* After Forms and Navigation */
+.dropdown-item.active,
+.dropdown-item.active > svg,
+.dropdown-item:active,
+.dropdown-item:active > svg {
+	background-color: var(--slate-100);
+    color: var(--blue-800);
+}
+
+.dropdown-item:focus,
+.dropdown-item.active,
+.dropdown-item:active,
+.dropdown-item:active div svg,
+.dropdown-item.active div svg,
+.dropdown-item:focus:hover,
+.dropdown-item.active:hover,
+.dropdown-item:active:hover,
+.dropdown-item:active:hover div svg,
+.dropdown-item.active:hover div svg {
+	color: var(--blue-50);
+	background-color: var(--blue-500);
+}
+
+.dropdown-menu {
+	z-index: 1110
+}
+
+.dropdown-item,
+.dropdown-item:hover {
+	color: var(--slate-700);
+}
+.dropdown-item div svg {
+	color: var(--slate-400);
+}
+
+@media (max-width: 991.998px) {
+	.nav-item .dropdown-item,
+	.nav-item .dropdown-item:hover {
+		color: var(--slate-700);
+	}
+	.nav-item .dropdown-item div svg {
+		color: var(--slate-300);
+	}
+	.nav-item .dropdown-item:focus,
+	.nav-item .dropdown-item.active,
+	.nav-item .dropdown-item:active,
+	.nav-item .dropdown-item:active div svg,
+	.nav-item .dropdown-item.active div svg {
+		background-color: var(--dropzone-background-hover);
+	}
+}

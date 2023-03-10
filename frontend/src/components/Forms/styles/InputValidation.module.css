@@ -1,0 +1,50 @@
+.control {
+    margin: 1rem 0;
+    display: flex;
+    align-items: stretch;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .control {
+        align-items: center;
+        flex-direction: row;
+    }
+}
+
+.control label,
+.control input {
+    display: block;
+}
+
+.control label {
+    flex: 1;
+    color: var(--gray-500);
+    margin-bottom: 0.5rem;
+}
+
+.control input {
+    flex: 3;
+    font: inherit;
+    padding: 0.35rem 0.35rem;
+    border-radius: .35rem;
+    border: 1px solid var(--gray-300);
+}
+
+.control input:focus,
+.control-block input:focus {
+    outline: none;
+    border-color: var(--indigo-500);
+    background: var(--indigo-100);
+}
+
+.control.invalid input,
+.control-block.invalid input {
+    background: var(--red-100);
+	outline: 2px solid transparent;
+    outline-offset: 2px;
+    --ring-offset-shadow: var(--empty,/*!*/ /*!*/) 0 0 0 0px white;
+    --ring-shadow: var(--empty,/*!*/ /*!*/) 0 0 0 calc(1px + 0px) var(--red-600);
+    box-shadow: var(--ring-offset-shadow), var(--ring-shadow),var(--shadow);
+    border-color: var(--red-600);
+}

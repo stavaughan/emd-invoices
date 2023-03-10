@@ -1,0 +1,25 @@
+.icon-circle {
+    align-items: center;
+    border-radius: 15%;
+    display: inline-flex;
+    height: 4.1875rem;
+    justify-content: center;
+    width: 4.1875rem;
+}
+
+.icon-circle svg {
+    width: 2em;
+    height: 2em;
+}
+
+@media (max-width: 575.98px) {
+    .icon-circle {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+
+    .icon-circle svg {
+        width: 1.6em;
+        height: 1.6em;
+    }
+}

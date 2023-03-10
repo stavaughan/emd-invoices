@@ -1,0 +1,88 @@
+/* Before Lists css */
+.card {
+	margin-bottom: 1.5rem;
+	border: 1px solid var(--gray-200);
+	border-radius: .5rem;
+}
+
+.card>* {
+	flex-shrink: 0
+}
+
+.card-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background-color: transparent;
+	border-bottom: 1px solid var(--slate-200);
+	padding: 1rem 1.5rem;
+}
+
+.card-header>:first-child {
+	flex: 1
+}
+
+.card-header+.card-footer {
+	border-top-width: 0
+}
+
+.card-header-title {
+	margin-bottom: 0
+}
+
+.card-header:first-child {
+	border-radius: calc(.5rem - 1px) calc(.5rem - 1px) 0 0
+}
+
+.card>hr {
+	margin-right: 0;
+	margin-left: 0
+}
+
+.card>.list-group {
+	border-top: inherit;
+	border-bottom: inherit
+}
+
+.card>.list-group:first-child {
+	border-top-width: 0;
+	border-top-left-radius: calc(.5rem - 1px);
+	border-top-right-radius: calc(.5rem - 1px)
+}
+
+.card>.list-group:last-child {
+	border-bottom-width: 0;
+	border-bottom-right-radius: calc(.5rem - 1px);
+	border-bottom-left-radius: calc(.5rem - 1px)
+}
+
+.card>.card-header+.list-group,
+.card>.list-group+.card-footer {
+	border-top: 0
+}
+
+.card-title {
+	margin-bottom: .5rem;
+	font-size: .975rem;
+	font-weight: 500;
+	color: var(--gray-900);
+}
+
+.card-footer {
+	padding: 1rem 1.5rem;
+	background-color: transparent;
+	border-top: 1px solid var(--emd-background-color)
+}
+
+.card-footer:last-child {
+	border-radius: 0 0 calc(.5rem - 1px) calc(.5rem - 1px)
+}
+
+.card-img-top {
+	width: 100%
+}
+
+.card-img-top {
+	border-top-left-radius: calc(.5rem - 1px);
+	border-top-right-radius: calc(.5rem - 1px)
+}

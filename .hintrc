@@ -1,0 +1,25 @@
+{
+  "extends": [
+    "development"
+  ],
+  "hints": {
+    "manifest-file-extension": "off",
+    "axe/name-role-value": [
+      "default",
+      {
+        "link-name": "off"
+      }
+    ],
+    "compat-api/css": [
+      "default",
+      {
+        "ignore": [
+          "@page",
+          "text-decoration-skip-ink",
+          "orphans",
+          "widows"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,1 @@
+export { default as PageLinkCardStyle } from './PageLinkCardStyle'

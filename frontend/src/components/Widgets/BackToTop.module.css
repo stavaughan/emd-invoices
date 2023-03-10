@@ -1,0 +1,72 @@
+:root {
+    --btt-background-color:var(--sky-300);
+}
+
+.scrolltop {
+    opacity: .3;
+    animation: animation-scrolltop .4s ease-out 1;
+    display: flex
+}
+
+.scrolltop:hover {
+    transition: color .2s ease,var(--btt-background-color) .2s ease;
+    opacity: 1
+}
+
+.scrolltop {
+    justify-content: center;
+    align-items: center;
+    width: 36px;
+    height: 36px;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 9999;
+    background-color: var(--btt-background-color);
+    box-shadow: 0 0.5rem 1.5rem 0.5rem rgb(0 0 0 / 8%);
+    transition: color .2s ease,var(--btt-background-color) .2s ease;
+    border-radius: .95rem;
+}
+
+.scrolltop .svg-icon svg {
+    height: 24px;
+    width: 24px
+}
+
+.scrolltop .svg-icon svg [fill]:not(g) {
+    transition: fill .3s ease;
+    fill: #fff
+}
+
+.scrolltop .svg-icon svg:hover [fill]:not(g) {
+    transition: fill .3s ease
+}
+
+.scrolltop:hover .svg-icon svg [fill]:not(g) {
+    transition: fill .3s ease;
+    fill: #fff
+}
+
+.scrolltop:hover .svg-icon svg:hover [fill]:not(g) {
+    transition: fill .3s ease
+}
+
+@media (max-width: 991.98px) {
+    .scrolltop {
+        bottom:30px;
+        right: 15px;
+        width: 30px;
+        height: 30px
+    }
+}
+
+@keyframes animation-scrolltop {
+    from {
+        margin-bottom: -15px
+    }
+
+    to {
+        margin-bottom: 0
+    }
+}
