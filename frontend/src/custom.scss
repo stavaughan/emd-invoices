@@ -71,16 +71,8 @@ $cyan-200: #a5f3fc;
 $cyan-100: #cffafe;
 $cyan-50: #ecfeff;
 
-$teal-900: #134e4a;
-$teal-800: #115e59;
 $teal-700: #0f766e;
-$teal-600: #0d9488;
-$teal-500: #14b8a6;
-$teal-400: #2dd4bf;
-$teal-300: #5eead4;
 $teal-200: #99f6e4;
-$teal-100: #ccfbf1;
-$teal-50: #f0fdfa;
 
 $red-900: #7f1d1d;
 $red-800: #991b1b;
@@ -270,16 +262,8 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 	--sky-100: #{$sky-100};
 	--sky-50: #{$sky-50};
 
-	--teal-900: #{$teal-900};
-	--teal-800: #{$teal-800};
 	--teal-700: #{$teal-700};
-	--teal-600: #{$teal-600};
-	--teal-500: #{$teal-500};
-	--teal-400: #{$teal-400};
-	--teal-300: #{$teal-300};
 	--teal-200: #{$teal-200};
-	--teal-100: #{$teal-100};
-	--teal-50: #{$teal-50};
 
 	--cyan-900: #{$cyan-900};
 	--cyan-800: #{$cyan-800};
@@ -332,7 +316,6 @@ $font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mon
 	--amber-200: #{$amber-200};
 	--amber-100: #{$amber-100};
 	--green-500: #{$green-500};
-	--teal-500: #{$teal-500};
 
 	--primary-lighter-8: #{$primary-lighter-8};
 	--primary-lighter-9: #{$primary-lighter-8};
